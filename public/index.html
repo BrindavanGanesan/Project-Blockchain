@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<style>
+    .logout-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#logoutButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#logoutButton:hover {
+    background-color: #ff1a1a;
+}
+</style>
+<head>
+    <title>Madhu - Charitable Healthcare DApp</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+    <h2>Madhu - Charitable Healthcare DApp</h2>
+
+    <div class="card">
+        <h3>Register Patient</h3>
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" placeholder="Enter Name">
+        <label for="ageInput">Age:</label>
+        <input type="number" id="ageInput" placeholder="Enter Age">
+        <label for="historyInput">Medical History:</label>
+        <input type="text" id="historyInput" placeholder="Enter Medical History">
+        <button onclick="registerPatient()">Register</button>
+    </div>
+
+    <div class="card">
+        <h3>View Patient Details</h3>
+        <label for="patientAddressInput">Patient Address:</label>
+        <input type="text" id="patientAddressInput" placeholder="Enter Patient Address">
+        <button onclick="getPatientDetails()">View Details</button>
+        <div id="patientDetails"></div>
+    </div>
+
+    <div class="card">
+        <h3>AI-Powered Medical Insights</h3>
+        <label for="patientAddressInput">Patient Address:</label>
+        <input type="text" id="patientAddressInput" placeholder="Enter Patient Address">
+        <button onclick="generateInsight()">Get Insight</button>
+        <div id="insightResult"></div>
+    </div>
+
+    <div class="card">
+        <h3>Make a Payment</h3>
+        <label for="depositAmount">Amount in Ether:</label>
+        <input type="text" id="depositAmount" placeholder="Enter Amount">
+        <button onclick="depositEther()">Deposit</button>
+    </div>
+
+    <div class="card">
+        <h3>View Contract Balance</h3>
+        <button onclick="getContractBalance()">View Balance</button>
+    </div>
+
+    <footer>
+        &copy; 2025 Blockchain Healthcare. All Rights Reserved.
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+    <script src="script.js"></script>
+    <div class="logout-container">
+        <button id="logoutButton" onclick="logout()">Logout</button>
+    </div>
+</body>
+</html>

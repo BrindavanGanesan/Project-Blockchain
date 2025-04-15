@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Patient Details</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+    <h2>View Patient Details</h2>
+
+    <div class="card">
+        <h3>View Patient Details</h3>
+        <input type="text" id="patientAddressInput" placeholder="Enter Patient's Ethereum Address">
+        <button onclick="getPatientDetails()">View Details</button>
+        <h4>Take care buddy!</h4>
+        <div id="patientDetails"></div>
+    </div>
+    <button onclick="location.href='index.html'">Home</button>
+    <footer>
+        &copy; 2025 Blockchain Healthcare. All Rights Reserved.
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/1.2.7-rc.0/web3.min.js"></script>
+</body>
+</html>
